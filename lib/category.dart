@@ -61,9 +61,9 @@ class CategoryGridItem extends StatelessWidget {
 class CateogoriesScreen extends StatelessWidget {
   const CateogoriesScreen(
       {super.key,
-      required this.onToggleFavorite,
+      // required this.onToggleFavorite,
       required this.availableMeals});
-  final void Function(Meal meal) onToggleFavorite;
+  // final void Function(Meal meal) onToggleFavorite;
   //Redirect particular item to their specific page
   final List<Meal> availableMeals;
   void _selectCategory(BuildContext context, Category category) {
@@ -77,7 +77,7 @@ class CateogoriesScreen extends StatelessWidget {
         builder: (ctx) => MealsScreen(
           title: category.title,
           meals: filteredList,
-          onToggleFavorite: onToggleFavorite,
+          // onToggleFavorite: onToggleFavorite,
         ),
       ),
     );
